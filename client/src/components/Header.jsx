@@ -1,18 +1,15 @@
-import Logo from "./Logo";
 import Container from "../ui/Container";
 
-export default function Header() {
+export default function Header({ children }) {
   return (
     <Container
-      bgColor="var(--color-grey-200)"
+      bgColor="var(--color-cyan-50)"
       justifyContent="space-between"
       alignItems="center"
-      padding="10px 50px"
-      height="10vh"
+      padding="2rem 4rem"
       as="header"
     >
-      <Logo />
-      <nav>NavBar</nav>
+      {children}
     </Container>
   );
 }

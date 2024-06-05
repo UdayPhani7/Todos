@@ -12,7 +12,9 @@ const Heading = styled.h1`
       ? css`
           color: ${props.color};
         `
-      : ``}
+      : css`
+          color: var(--color-cyan-600);
+        `};
 `;
 
 export default Heading;
