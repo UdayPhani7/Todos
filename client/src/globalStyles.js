@@ -6,16 +6,17 @@ const GlobalStyles = createGlobalStyle`
   &,
   &.light-mode {
     --color-cyan-0: #ffffff;
-    --color-cyan-50: #b3d9ff;
-    --color-cyan-100: #a4c8ec;
-    --color-cyan-200: #9dbedf;
-    --color-cyan-300: #86a8cb;
-    --color-cyan-400: #7498bb;
-    --color-cyan-500: #5d7c9b;
-    --color-cyan-600: #4e6a87;
-    --color-cyan-700: #38526f;
-    --color-cyan-800: #2c4764;
-    --color-cyan-900: #1b3046;
+    --color-cyan-50: #edf4f4;
+    --color-cyan-100: #cbdfef;
+    --color-cyan-200: #aac4dd;
+    --color-cyan-300: #99b6d6;
+    --color-cyan-400: #88a8c8;
+    --color-cyan-500: #779abe;
+    --color-cyan-600: #6688ac;
+    --color-cyan-700: #557191;
+    --color-cyan-800: #446180;
+    --color-cyan-900: #334b63;
+    --color-cyan-950: #223243;
 
     --color-blue-100: #e0f2fe;
     --color-blue-700: #0369a1;
@@ -37,24 +38,23 @@ const GlobalStyles = createGlobalStyle`
     --shadow-md: 0px 0.6rem 2.4rem rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.12);
 
-
     --image-grayscale: 0;
     --image-opacity: 100%;
   }
 
-  &,
   &.dark-mode {
-    --color-cyan-0: #0e1d2c;
-    --color-cyan-50: #1b3046;
-    --color-cyan-100: #2c4764;
-    --color-cyan-200: #38526f;
-    --color-cyan-300: #4e6a87;
-    --color-cyan-400: #5d7c9b;
-    --color-cyan-500: #7498bb;
-    --color-cyan-600: #86a8cb;
-    --color-cyan-700: #9dbedf;
-    --color-cyan-800: #a4c8ec;
-    --color-cyan-900: #b3d9ff;
+    --color-cyan-0: #1e2c3a;
+    --color-cyan-50: #223243;
+    --color-cyan-100: #334b63;
+    --color-cyan-200: #446180;
+    --color-cyan-300: #557191;
+    --color-cyan-400: #6688ac;
+    --color-cyan-500: #779abe;
+    --color-cyan-600: #88a8c8;
+    --color-cyan-700: #99b6d6;
+    --color-cyan-800: #aac4dd;
+    --color-cyan-900: #cbdfef;
+    --color-cyan-950: #edf4f4;
 
     --color-blue-100: #075985;
     --color-blue-700: #e0f2fe;
@@ -80,8 +80,6 @@ const GlobalStyles = createGlobalStyle`
     --image-opacity: 90%;
   }
 }
-
-
 
 *,
 *::after,

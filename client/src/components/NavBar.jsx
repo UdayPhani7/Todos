@@ -11,17 +11,16 @@ const NavList = styled.ul`
 
 const NavItem = styled.li`
   width: 7.4rem;
-  background-color: var(--color-cyan-100);
+  background-color: var(--color-cyan-50);
   font-weight: 600;
   text-align: center;
   border-radius: 3px;
   padding: 0.3rem 0.5rem;
-  box-shadow: var(--shadow-sm);
   transition: all 0.3s;
 
   &:hover {
-    box-shadow: var(--shadow-md);
-    background-color: var(--color-cyan-200);
+    box-shadow: var(--shadow-sm);
+    background-color: var(--color-cyan-100);
   }
 `;
 

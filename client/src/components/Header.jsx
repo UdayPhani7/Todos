@@ -6,7 +6,7 @@ export default function Header({ children }) {
       bgColor="var(--color-cyan-50)"
       justifyContent="space-between"
       alignItems="center"
-      padding="2rem 4rem"
+      padding="2rem 5rem"
       as="header"
     >
       {children}
