@@ -1,14 +1,12 @@
-import Container from "../ui/Container";
+import styled from "styled-components";
+
+const StyledMain = styled.main`
+  background-color: var(--color-cyan-0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
 
 export default function Main({ children }) {
-  return (
-    <Container
-      bgColor="var(--color-cyan-0)"
-      alignItems="center"
-      justifyContent="center"
-      as="main"
-    >
-      {children}
-    </Container>
-  );
+  return <StyledMain>{children}</StyledMain>;
 }

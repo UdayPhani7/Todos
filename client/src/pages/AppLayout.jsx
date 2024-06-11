@@ -10,8 +10,8 @@ const AppContainer = styled.div`
   display: grid;
   width: 100vw;
   height: 100vh;
-  grid-template-columns: auto;
-  grid-template-rows: 10vh 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 8vh 1fr;
 `;
 
 export default function AppLayout() {

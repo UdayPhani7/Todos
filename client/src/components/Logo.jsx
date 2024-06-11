@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Heading from "../ui/Heading";
 import { NavLink } from "react-router-dom";
 
 const LogoLink = styled(NavLink)`
@@ -9,15 +8,23 @@ const LogoLink = styled(NavLink)`
 `;
 
 const Image = styled.img`
-  width: 5rem;
-  height: 5rem;
+  width: 4.5rem;
+  height: 4.3rem;
+`;
+
+const AppName = styled.h1`
+  font-size: 2.1rem;
+  letter-spacing: 0.5rem;
+  color: var(--color-blue-700);
+  text-transform: uppercase;
+  text-shadow: 1px 1px 3px var(--color-cyan-600);
 `;
 
 export default function Logo() {
   return (
-    <LogoLink>
+    <LogoLink to="/">
       <Image src="logo.png" alt="Tasky-logo" />
-      <Heading size="2.6rem">Tasky</Heading>
+      <AppName>tasky</AppName>
     </LogoLink>
   );
 }

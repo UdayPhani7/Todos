@@ -18,18 +18,17 @@ const GlobalStyles = createGlobalStyle`
     --color-cyan-900: #334b63;
     --color-cyan-950: #223243;
 
-    --color-blue-100: #e0f2fe;
+    --color-blue-100: #90d3ff;
     --color-blue-700: #0369a1;
-    --color-green-100: #dcfce7;
+    --color-green-100: #8dffb5;
     --color-green-700: #15803d;
-    --color-yellow-100: #fef9c3;
-    --color-yellow-700: #a16207;
-    --color-silver-100: #e5e7eb;
+    --color-yellow-100: #fff79e;
+    --color-yellow-700: #fff200;
+    --color-silver-100: #c8ccd3;
     --color-silver-700: #374151;
-    --color-indigo-100: #e0e7ff;
+    --color-indigo-100: #938be2;
     --color-indigo-700: #4338ca;
-
-    --color-red-100: #fee2e2;
+    --color-red-100: #f17c7c;
     --color-red-700: #b91c1c;
 
     --backdrop-color: rgba(255, 255, 255, 0.1);
@@ -38,8 +37,8 @@ const GlobalStyles = createGlobalStyle`
     --shadow-md: 0px 0.6rem 2.4rem rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.12);
 
-    --image-grayscale: 0;
-    --image-opacity: 100%;
+    --image-grayscale: 20%;
+    --image-opacity: 90%;
   }
 
   &.dark-mode {
@@ -56,19 +55,18 @@ const GlobalStyles = createGlobalStyle`
     --color-cyan-900: #cbdfef;
     --color-cyan-950: #edf4f4;
 
-    --color-blue-100: #075985;
-    --color-blue-700: #e0f2fe;
-    --color-green-100: #166534;
-    --color-green-700: #dcfce7;
-    --color-yellow-100: #854d0e;
-    --color-yellow-700: #fef9c3;
+    --color-blue-100: #0369a1;
+    --color-blue-700: #90d3ff;
+    --color-green-100: #15803d;
+    --color-green-700: #8dffb5;
+    --color-yellow-100: #fff200;
+    --color-yellow-700: #fff79e;
     --color-silver-100: #374151;
-    --color-silver-700: #f3f4f6;
-    --color-indigo-100: #3730a3;
-    --color-indigo-700: #e0e7ff;
-
-    --color-red-100: #fee2e2;
-    --color-red-700: #b91c1c;
+    --color-silver-700: #c8ccd3;
+    --color-indigo-100: #4338ca;
+    --color-indigo-700: #938be2;
+    --color-red-100: #b91c1c;
+    --color-red-700: #f17c7c;
 
     --backdrop-color: rgba(0, 0, 0, 0.3);
 
@@ -76,24 +74,50 @@ const GlobalStyles = createGlobalStyle`
     --shadow-md: 0px 0.6rem 2.4rem rgba(0, 0, 0, 0.3);
     --shadow-lg: 0 2.4rem 3.2rem rgba(0, 0, 0, 0.4);
 
-    --image-grayscale: 10%;
-    --image-opacity: 90%;
+    --image-grayscale: 20%;
+    --image-opacity: 70%;
   }
 }
 
 *,
 *::after,
 *::before {
-  font-size: 1.6rem;
-  font-family: 'Roboto', sans-serif;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
   transition: background-color 0.3s, border 0.3s;
 }
 
-html {
-  font-size: 62.5%;
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 50%
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  html {
+    font-size: 55%
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  html {
+    font-size: 62.5%
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  html {
+    font-size: 65%
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 67.5%
+  }
 }
 
 button {
@@ -108,14 +132,6 @@ select:disabled,
 input:disabled {
   background-color: var(--color-cyan-200);
   color: var(--color-cyan-500);
-}
-
-input:focus,
-button:focus,
-textarea:focus,
-select:focus {
-  outline: 2px solid var(--color-cyan-600);
-  outline-offset: -1px;
 }
 
 a {
@@ -135,6 +151,7 @@ h3,
 h4,
 h5,
 h6 {
+  color: var(--color-cyan-500);
   overflow-wrap: break-word;
   hyphens: auto;
 }

@@ -1,15 +1,17 @@
-import Container from "../ui/Container";
+import styled from "styled-components";
+
+const StyledHeader = styled.header`
+  background-color: var(--color-cyan-50);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+
+  @media screen and (max-width: 576px) {
+    padding: 1.5rem 3rem;
+  }
+`;
 
 export default function Header({ children }) {
-  return (
-    <Container
-      bgColor="var(--color-cyan-50)"
-      justifyContent="space-between"
-      alignItems="center"
-      padding="2rem 5rem"
-      as="header"
-    >
-      {children}
-    </Container>
-  );
+  return <StyledHeader>{children}</StyledHeader>;
 }
