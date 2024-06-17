@@ -41,6 +41,7 @@ const GlobalStyles = createGlobalStyle`
     --image-opacity: 90%;
   }
 
+  &,
   &.dark-mode {
     --color-cyan-0: #1e2c3a;
     --color-cyan-50: #223243;

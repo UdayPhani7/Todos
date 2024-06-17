@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import TodoItem from "../components/TodoItem";
 import { useEffect, useRef, useState } from "react";
+import AddTask from "../components/AddTask";
 
 const TodosContainer = styled.div`
   display: flex;
@@ -21,6 +22,14 @@ const TodosContainer = styled.div`
     width: 70vw;
     padding: 2rem 8rem;
   }
+`;
+
+const TaskHeader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  margin-bottom: 1.2rem;
 `;
 
 const Heading = styled.h2`
@@ -48,8 +57,8 @@ const TodosList = styled.ul`
   }
 
   &::-webkit-scrollbar-thumb {
-    background: var(--color-cyan-100);
     border-radius: 5px;
+    background: var(--color-cyan-100);
   }
 
   &::-webkit-scrollbar-thumb:hover {
@@ -81,7 +90,12 @@ export default function Todos({ todos }) {
 
   return (
     <TodosContainer>
-      <Heading>Tasks</Heading>
+      <div>
+        <TaskHeader>
+          <Heading>Tasks</Heading>
+          <AddTask />
+        </TaskHeader>
+      </div>
       <TodosList ref={todoListRef} className={isScrolling ? "scrolling" : ""}>
         {todos.map((todo, index) => (
           <TodoItem key={index} todo={todo} />

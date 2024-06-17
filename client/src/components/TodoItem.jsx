@@ -10,7 +10,7 @@ const ListItem = styled.li`
   padding: 0.7rem 1.4rem;
   box-shadow: var(--shadow-sm);
   background-color: var(--color-cyan-0);
-  border: 2px solid var(--color-cyan-50);
+  border: 2px solid var(--color-cyan-100);
 `;
 
 const ItemDetails = styled.div`
@@ -42,7 +42,7 @@ const StatusIndicator = styled.span`
 
 const OptionsButton = styled.button`
   background-color: transparent;
-  color: white;
+  color: var(--color-cyan-950);
   outline: none;
   border: none;
 `;
