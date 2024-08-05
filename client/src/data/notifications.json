@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "user_id": 1,
+    "type": "review request",
+    "message": "Bob has requested a review for the homepage design.",
+    "status": "sent"
+  },
+  {
+    "id": 2,
+    "user_id": 2,
+    "type": "task completion",
+    "message": "Charlie has completed the mockup task.",
+    "status": "seen"
+  },
+  {
+    "id": 3,
+    "user_id": 3,
+    "type": "task termination request",
+    "message": "Alice has requested to terminate the task 'Develop API'.",
+    "status": "accepted"
+  },
+  {
+    "id": 4,
+    "user_id": 4,
+    "type": "teammate request",
+    "message": "Bob has sent you a teammate request.",
+    "status": "rejected"
+  }
+]

@@ -47,8 +47,8 @@ const OptionsButton = styled.button`
   border: none;
 `;
 
-export default function TodoItem({ todo }) {
-  const { task, deadline, status } = todo;
+export default function TodoItem({ task }) {
+  const { title, deadline, status } = task;
   let indicatorColor = "";
   switch (status) {
     case "backlog":
@@ -70,7 +70,7 @@ export default function TodoItem({ todo }) {
     <ListItem>
       <ItemDetails>
         <TaskName>
-          <StatusIndicator color={indicatorColor} /> {task}
+          <StatusIndicator color={indicatorColor} /> {title}
         </TaskName>
         <Deadline>deadline: {deadline}</Deadline>
       </ItemDetails>

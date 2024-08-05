@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "parent_id": null,
+    "title": "Design Homepage",
+    "description": "Create a design for the homepage",
+    "created_on": "2024-08-01",
+    "created_by": 1,
+    "assigned_to": 2,
+    "deadline": "2024-08-10",
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "parent_id": 1,
+    "title": "Create Mockup",
+    "description": "Create a mockup for the homepage design",
+    "created_on": "2024-08-02",
+    "created_by": 2,
+    "assigned_to": 3,
+    "deadline": "2024-08-05",
+    "status": "review"
+  },
+  {
+    "id": 3,
+    "parent_id": null,
+    "title": "Develop API",
+    "description": "Create RESTful API for task management",
+    "created_on": "2024-08-03",
+    "created_by": 2,
+    "assigned_to": 1,
+    "deadline": "2024-08-15",
+    "status": "todo"
+  },
+  {
+    "id": 4,
+    "parent_id": null,
+    "title": "Set Up Database",
+    "description": "Design and set up the database schema",
+    "created_on": "2024-08-03",
+    "created_by": 3,
+    "assigned_to": 2,
+    "deadline": "2024-08-12",
+    "status": "assigned"
+  },
+  {
+    "id": 5,
+    "parent_id": 4,
+    "title": "Create Tables",
+    "description": "Create necessary tables in the database",
+    "created_on": "2024-08-04",
+    "created_by": 2,
+    "assigned_to": 3,
+    "deadline": "2024-08-06",
+    "status": "hold"
+  }
+]

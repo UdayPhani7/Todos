@@ -37,7 +37,7 @@ export default function NavBar() {
           <NavItemLink to="/">Home</NavItemLink>
         </NavItem>
         <NavItem>
-          <NavItemLink to="/todos">Todos</NavItemLink>
+          <NavItemLink to="/tasks">Tasks</NavItemLink>
         </NavItem>
         <NavItem>
           <NavItemLink to="/login">Profile</NavItemLink>

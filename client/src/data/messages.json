@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "sender": 1,
+    "receiver": 2,
+    "message": "Please complete the design by tomorrow.",
+    "created_on": "2024-08-03T14:00:00Z",
+    "status": "sent"
+  },
+  {
+    "id": 2,
+    "sender": 2,
+    "receiver": 3,
+    "message": "Can you review the mockup?",
+    "created_on": "2024-08-04T10:00:00Z",
+    "status": "seen"
+  },
+  {
+    "id": 3,
+    "sender": 3,
+    "receiver": 4,
+    "message": "Please set up the database schema by end of the day.",
+    "created_on": "2024-08-04T12:00:00Z",
+    "status": "not sent"
+  },
+  {
+    "id": 4,
+    "sender": 4,
+    "receiver": 1,
+    "message": "I need some assistance with the API development.",
+    "created_on": "2024-08-05T11:00:00Z",
+    "status": "seen"
+  }
+]

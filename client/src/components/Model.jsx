@@ -21,23 +21,35 @@ const StyledModal = styled.div`
   transform: translate(-50%, -50%);
   background-color: var(--color-cyan-0);
   box-shadow: var(--shadow-lg);
-  padding: 3.2rem 4rem;
+  padding: 2rem 4rem 3.5rem 4rem;
   border-radius: 10px;
+`;
+
+const ModalHeader = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+`;
+
+const ModalTitle = styled.h1`
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--color-cyan-700);
 `;
 
 const Button = styled.button`
   background: none;
   border: none;
-  padding: 0.4rem;
-  border-radius: var(--border-radius-sm);
-  transform: translateX(0.8rem);
+  padding: 0.6rem;
+  padding-bottom: 0.4rem;
+  border-radius: 2.4rem;
+  transform: translateX(1rem);
   transition: all 0.2s;
-  position: absolute;
-  top: 1.2rem;
-  right: 1.9rem;
 
   &:hover {
-    background-color: var(--color-cyan-100);
+    background-color: var(--color-cyan-50);
+    box-shadow: var(--shadow-md);
   }
 
   & svg {
@@ -68,7 +80,7 @@ function Open({ children, opens: windowName }) {
   return cloneElement(children, { onClick: () => open(windowName) });
 }
 
-function Window({ name, children }) {
+function Window({ name, children, title }) {
   const { windowName, close } = useContext(ModalContext);
 
   if (name !== windowName) return null;
@@ -76,10 +88,13 @@ function Window({ name, children }) {
   return createPortal(
     <Overlay>
       <StyledModal>
-        <Button onClick={close}>
-          <HiXMark />
-        </Button>
-        <div>{children}</div>
+        <ModalHeader>
+          <ModalTitle>{title}</ModalTitle>
+          <Button onClick={close}>
+            <HiXMark />
+          </Button>
+        </ModalHeader>
+        {children}
       </StyledModal>
     </Overlay>,
     document.body
